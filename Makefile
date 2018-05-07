@@ -15,7 +15,7 @@ MAINDIR=.
 SV_DIR=$(MAINDIR)/source
 QWDTOOLS_DIR=$(MAINDIR)/source/qwdtools
 
-BASE_CFLAGS=-g -std=gnu11 -O3 -Wall -pthread -pipe -funsigned-char -DUSE_PR2 -D$(BYTE_ORDER)Q__ -DSERVERONLY -DUSE_PR2 -fno-strict-aliasing -ffast-math -funroll-loops
+BASE_CFLAGS=-m32 -O3 -Wall -pthread -pipe -funsigned-char -DUSE_PR2 -D$(BYTE_ORDER)Q__ -DSERVERONLY -DUSE_PR2 -fno-strict-aliasing -ffast-math -funroll-loops
 WITH_OPTIMIZED_CFLAGS=NO
 
 USE_ASM=-Did386
